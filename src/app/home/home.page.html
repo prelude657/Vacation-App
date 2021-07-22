@@ -1,20 +1,57 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>The Flight Life Group</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content style="text-align:center">
+  <ion-button color="dark" size="small"(click)="Greecepage()">Greece</ion-button>
+  <ion-button color="dark" size="small" (click)="Colombiapage()"> Colombia</ion-button>
+  <ion-button color="dark" size="small"(click)="Hawaiipage()"> Hawaii</ion-button>
+  <br>
+  <img src="./assets/carty.png" height='200' width='300'> 
+  <img src="./assets/FLG.png"height='200' width='300'> 
+  <img src="./assets/Hawaii.png" height='200' width='300'> 
+  <br>
+ 
+  <ion-card>
+    <ion-item>
+      <img src="./assets/download.png" height='60' width='100'> 
+      <ion-label>Greece</ion-label>
+      <ion-button fill="outline" slot="end" (click)="Greecepage()">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      Come Join Us For Another Great Trip to Athen, Mykonos, and Santorini,Greece!
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-item>
+      <img src="./assets/colombia.png" height='60' width='100'> 
+      <ion-label>Colombia</ion-label>
+      <ion-button fill="outline" slot="end" (click)="Colombiapage()">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      Come Join Us For Another Great Trip to Cartagena,Colombia
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <img src="./assets/usa.png" height='60' width='100'> 
+      <ion-label>Hawaii</ion-label>
+      <ion-button fill="outline" slot="end" (click)="Hawaiipage()">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      Come Join Us For Another Great Trip to Hawaii, USA
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
+<ion-card-content style="text-align: center; background: black;color: white; size: 2em;">
+  Flight Life Group is Brought to you by RunwayBoyz.com <br>
+  <img src="./assets/RBlogo.png" height='60' width='260'> 
+</ion-card-content>

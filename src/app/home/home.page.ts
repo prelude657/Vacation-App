@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,20 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private route: Router) {}
+
+  Homepage() {
+    this.route.navigate(['/home']);
+  }
+  Greecepage() {
+    this.route.navigate(['/greece']);
+  }
+  
+  Colombiapage() {
+    this.route.navigate(['/colombia']);
+  }
+  Hawaiipage() {
+    this.route.navigate(['/hawaii']);
+  }
 
 }

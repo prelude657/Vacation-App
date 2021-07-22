@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'greece',
+    loadChildren: () => import('./greece/greece.module').then( m => m.GreecePageModule)
+  },
+  {
+    path: 'colombia',
+    loadChildren: () => import('./colombia/colombia.module').then( m => m.ColombiaPageModule)
+  },
+  {
+    path: 'hawaii',
+    loadChildren: () => import('./hawaii/hawaii.module').then( m => m.HawaiiPageModule)
+  },
 ];
 
 @NgModule({
